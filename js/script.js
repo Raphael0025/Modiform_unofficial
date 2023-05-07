@@ -2,6 +2,10 @@ function move(){
     window.location.href="index.html"
 }
 
+function logout(){
+    window.location.href="login.html"
+}
+
 function openNav() {
     var target = document.getElementById("side");
     var target2 = document.getElementById("side2");

@@ -1,9 +1,9 @@
 function move(){
-    window.location.href="index.html"
+    window.location.href="./screens/dash.html"
 }
 
 function logout(){
-    window.location.href="login.html"
+    window.location.href="index.html"
 }
 
 function openNav() {

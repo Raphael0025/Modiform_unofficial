@@ -23,84 +23,84 @@
     </nav>
     <div id="side2" class="bgCont"></div>
     <div id="side" class="bgSP">
-            <div class="topBar">
-                <i onclick="closeNav()" id="btn2" class="fa fa-bars" style="font-size: 22px;"></i>
-                <img src="../assets/img/logo.png" style="width: 5rem;"/>
+        <div class="topBar">
+            <i onclick="closeNav()" id="btn2" class="fa fa-bars" style="font-size: 22px;"></i>
+            <img onclick="showMain()" src="../assets/img/logo.png" style="width: 5rem;"/>
+        </div>
+        <div class="profile">
+            <div id="dd">
+                <i class="fa fa-user-circle-o" style="font-size: 130px;"></i>
             </div>
-            <div class="profile">
-                <div id="dd">
-                    <i class="fa fa-user-circle-o" style="font-size: 130px;"></i>
-                </div>
-                <span id="mp">my profile</span>
-                <span id="stuName">jeselle guizzagan victoria</span>
-                <span id="stuNum">02000229783</span>
+            <span id="mp">my profile</span>
+            <span id="stuName">jeselle guizzagan victoria</span>
+            <span id="stuNum">02000229783</span>
+        </div>
+        <hr class="sep">
+        <div class="list">
+            <div class="item" onclick="showIT()">
+                <span>ICT & ENGINEERING</span>
+                <i class="fa fa-plus"></i>
             </div>
-            <hr class="sep">
-            <div class="list">
-                <div class="item">
-                    <span>ICT & ENGINEERING</span>
-                    <i class="fa fa-plus"></i>
-                </div>
 
-                <div class="item">
-                    <span>hospitality management</span>
-                    <i class="fa fa-plus"></i>
-                </div>
-
-                <div class="item">
-                    <span>BUSINESS management</span>
-                    <i class="fa fa-plus"></i>
-                </div>
-
-                <div class="item">
-                    <span>tourism management</span>
-                    <i class="fa fa-plus"></i>
-                </div>
-
-                <div class="item">
-                    <span>senior high school</span>
-                    <i class="fa fa-plus"></i>
-                </div>
-
-                <div class="item">
-                    <span>junior high school</span>
-                    <i class="fa fa-plus"></i>
-                </div>
-
-                <div class="item">
-                    <span>OTHERS</span>
-                    <i class="fa fa-plus"></i>
-                </div>
+            <div class="item">
+                <span>hospitality management</span>
+                <i class="fa fa-plus"></i>
             </div>
-            <hr >
-            <div class="list">
-                <div class="item">
-                    <span>notifications</span>
-                    <i class="fa fa-bell"></i>
-                </div>
 
-                <div class="item">
-                    <span>items in cart</span>
-                    <i class="fa fa-shopping-cart" style="font-size: 22px;"></i>
-                </div>
+            <div class="item">
+                <span>BUSINESS management</span>
+                <i class="fa fa-plus"></i>
+            </div>
 
-                <div class="item">
-                    <span>settings</span>
-                    <i class="fa fa-gear" style="font-size: 22px;"></i>
-                </div>
+            <div class="item">
+                <span>tourism management</span>
+                <i class="fa fa-plus"></i>
+            </div>
 
-                <div onclick="logout()" class="item">
-                    <span>logout</span>
-                    <i class="fa fa-sign-out" style="font-size: 22px;"></i>
-                </div>
+            <div class="item">
+                <span>senior high school</span>
+                <i class="fa fa-plus"></i>
+            </div>
+
+            <div class="item">
+                <span>junior high school</span>
+                <i class="fa fa-plus"></i>
+            </div>
+
+            <div class="item">
+                <span>OTHERS</span>
+                <i class="fa fa-plus"></i>
             </div>
         </div>
-    <div class="container">
+        <hr >
+        <div class="list">
+            <div class="item">
+                <span>notifications</span>
+                <i class="fa fa-bell"></i>
+            </div>
+
+            <div class="item">
+                <span>items in cart</span>
+                <i class="fa fa-shopping-cart" style="font-size: 22px;"></i>
+            </div>
+
+            <div class="item">
+                <span>settings</span>
+                <i class="fa fa-gear" style="font-size: 22px;"></i>
+            </div>
+
+            <div onclick="logout()" class="item">
+                <span>logout</span>
+                <i class="fa fa-sign-out" style="font-size: 22px;"></i>
+            </div>
+        </div>
+    </div>
+    <div id="container" class="container">
         <div class="upper">
             <img src="../assets/img/bg2.png">
         </div>
         <div class="lowerHalf">
-            <div class="widget">
+            <div class="widget"  onclick="showIT()">
                 <img src="../assets/img/IT.png" />
                 <div class="title">
                     INFORMATION TECHNOLOGY
@@ -133,6 +133,47 @@
                 <div class="title">
                     Senior High
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="IT-m" class="IT-M">
+        <div id="IT-u" class="upper override">
+            <img src="../assets/img/it-polo.png" style="height: 100%;">
+        </div>
+        <div id="IT-l" class="lowerHalf override2">
+            <div class="widget"  style="padding-top: 10px; padding-bottom: 0;" onclick="showIT()">
+                <img style="height: 65%;" src="../assets/img/it-polo1.png" />
+                <div class="desc_price">
+                    men's it/cs/act polo
+                    p 350.00
+                </div>
+                <div class="title2">
+                    <div>S</div>
+                    <div>M</div>
+                    <div>L</div>
+                    <div>XL</div>
+                    <div>2XL</div>
+                    <div>3XL</div>
+                </div>
+            </div>
+            <div class="widget"  style="padding-top: 10px; padding-bottom: 0;" onclick="showIT()">
+                <img style="height: 65%; width: 30%;" src="../assets/img/it-pants.png" />
+                <div class="desc_price">
+                    men's it/cs/act pants
+                    p 450.00
+                </div>
+                <div class="title2">
+                    <div>S</div>
+                    <div>M</div>
+                    <div>L</div>
+                    <div>XL</div>
+                    <div>2XL</div>
+                    <div>3XL</div>
+                </div>
+            </div>
+            <div>
+                <button class="it-btn">Check Women's Uniform</button>
             </div>
         </div>
     </div>

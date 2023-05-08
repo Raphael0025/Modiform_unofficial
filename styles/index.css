@@ -3,20 +3,20 @@
 } 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+    background: #f1f1f1; 
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #aaa; 
+    background: #aaa; 
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+    background: #555; 
 }
 @media(prefers-reduced-motion: no-preference){
-  *{
+*{
     scroll-behavior:smooth;
-  }
+}
 }
 body{
     width: 100%;
@@ -91,6 +91,7 @@ ul{
     }
         .widget:hover{
             box-shadow: 0 0px 20px 1px gray;
+            cursor: pointer;
         }
     .widget > img{
         position: relative;
@@ -120,12 +121,8 @@ ul{
     background-color: rgba(0, 0, 0, 0.377);
 }
 @keyframes fade-in {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-    }
+    from {opacity: 0%;}
+    to {opacity: 100%;}
 }
 .bgSP{
     position: fixed;
@@ -144,7 +141,7 @@ ul{
     display: inline-flex;
     justify-content: space-between;
 }
-    .topBar > i:hover{
+    .topBar > i:hover, .topBar > img:hover{
         color: rgba(112, 112, 112, 0.548);
         cursor: pointer;
         transition: all 0.3s;
@@ -199,3 +196,67 @@ ul{
         color: #0B5793;
         transform: scale(1.1);
     }
+.IT-M{
+    height: 100vh;
+    margin: 0;
+    display: none;
+}
+.override{
+    height: 40%;
+    display: none;
+}
+.override2{
+    height: 60%;
+    display: none;
+}
+    .it-btn{
+        position:absolute;
+        top: 40rem;
+        left: 38%;
+        height: 45px;
+        width: 250px;
+        border-radius: 10px;
+        font-weight: 750;
+        text-transform: uppercase;
+        outline: 1px solid rgb(145, 145, 145);
+        border: none;
+        transition: all 0.5s;
+    }
+        .it-btn:hover{
+            cursor: pointer;
+            background-color: #0B5793;
+            color: #fff;
+            box-shadow: 0 10px 10px 1px gray;
+            transform: scale(1.1);
+        }
+    .desc_price{
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: 700;
+        width: 35%;
+        margin: auto;
+        line-height: 2;
+    }
+    .title2{
+        color:#000;
+        z-index: 9;
+        width: 88%;
+        position: absolute;
+        top: 17rem;
+        left: 1rem;
+        padding: 6px;
+        border-radius: 2px;
+        display: flex;
+    }
+        .title2 > div{
+            width: inherit;
+            margin: 3px;
+            border-radius: 3px;
+            padding: 5px;
+            border: 1px solid#000;
+            transition: all 0.5s;
+        }
+        .title2 > div:hover{
+            transform: scale(1.1);
+            border: 1px solid#727272;
+        }

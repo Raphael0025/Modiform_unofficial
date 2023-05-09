@@ -78,23 +78,21 @@
                 <span>notifications</span>
                 <i class="fa fa-bell"></i>
             </div>
-
             <div class="item">
                 <span>items in cart</span>
                 <i class="fa fa-shopping-cart" style="font-size: 22px;"></i>
             </div>
-
             <div class="item">
                 <span>settings</span>
                 <i class="fa fa-gear" style="font-size: 22px;"></i>
             </div>
-
             <div onclick="logout()" class="item">
                 <span>logout</span>
                 <i class="fa fa-sign-out" style="font-size: 22px;"></i>
             </div>
         </div>
     </div>
+<!-- Dashboard -->
     <div id="container" class="container">
         <div class="upper">
             <img src="../assets/img/bg2.png">
@@ -106,28 +104,24 @@
                     INFORMATION TECHNOLOGY
                 </div>
             </div>
-
             <div class="widget">
                 <img src="../assets/img/hm_neutral.png" />
                 <div class="title">
                     BUSINESS & MANAGEMENT
                 </div>
             </div>
-
-            <div class="widget">
+            <div class="widget" onclick="moveTM()">
                 <img src="../assets/img/tm.png" />
                 <div class="title">
                     TOURISM MANAGEMENT
                 </div>
             </div>
-
-            <div class="widget">
+            <div class="widget" onclick="move2hm()">
                 <img src="../assets/img/hm.png" />
                 <div class="title">
                     HOSPITALITY MANAGEMENT
                 </div>
             </div>
-
             <div class="widget">
                 <img src="../assets/img/shs.png" style="width: 299px; height: 78%;"/>
                 <div class="title">
@@ -136,7 +130,7 @@
             </div>
         </div>
     </div>
-
+<!-- IT Men -->
     <div id="IT-m" class="IT-M">
         <div id="IT-u" class="upper override">
             <img src="../assets/img/it-polo.png" style="height: 100%;">
@@ -159,7 +153,7 @@
             </div>
             <div class="widget"  style="padding-top: 10px; padding-bottom: 0;" onclick="showIT()">
                 <img style="height: 65%; width: 30%;" src="../assets/img/it-pants.png" />
-                <div class="desc_price">
+                <div class="desc_price" style="width: 38%;">
                     men's it/cs/act pants
                     p 450.00
                 </div>
@@ -173,7 +167,7 @@
                 </div>
             </div>
             <div class="btn-div">
-                <button class="it-btn">Check Women's Uniform</button>
+                <button class="it-btn" onclick="showITW()">Check Women's Uniform</button>
             </div>
         </div>
     </div>

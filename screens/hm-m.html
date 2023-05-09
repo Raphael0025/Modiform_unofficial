@@ -4,9 +4,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modiform</title>
+    <link rel="stylesheet" type="text/css" href="../styles/hm.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/sti-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/script.js"></script>
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <div class="logo">
+                <img src="../assets/img/sti-logo.png"/>
+            </div>
+            <ul>
+                <li onclick="openNav()"><i class="fa fa-navicon" style="font-size:32px" ></i></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="side2" class="bgCont"></div>
+    <div id="side" class="bgSP">
+        <div class="topBar">
+            <i onclick="closeNav()" id="btn2" class="fa fa-bars" style="font-size: 22px;"></i>
+            <img onclick="back()" src="../assets/img/logo.png" style="width: 5rem;"/>
+        </div>
+        <div class="profile">
+            <div id="dd">
+                <i class="fa fa-user-circle-o" style="font-size: 130px;"></i>
+            </div>
+            <span id="mp">my profile</span>
+            <span id="stuName">jeselle guizzagan victoria</span>
+            <span id="stuNum">02000229783</span>
+        </div>
+        <hr class="sep">
+        <div class="list">
+            <div class="item" onclick="back()">
+                <span>ICT & ENGINEERING</span>
+                <i class="fa fa-plus"></i>
+            </div>
+
+            <div class="item" onclick="move2hm()">
+                <span>hospitality management</span>
+                <i class="fa fa-plus"></i>
+            </div>
+
+            <div class="item">
+                <span>BUSINESS management</span>
+                <i class="fa fa-plus"></i>
+            </div>
+
+            <div class="item" onclick="moveTM()">
+                <span>tourism management</span>
+                <i class="fa fa-plus"></i>
+            </div>
+
+            <div class="item">
+                <span>senior high school</span>
+                <i class="fa fa-plus"></i>
+            </div>
+
+            <div class="item">
+                <span>junior high school</span>
+                <i class="fa fa-plus"></i>
+            </div>
+
+            <div class="item">
+                <span>OTHERS</span>
+                <i class="fa fa-plus"></i>
+            </div>
+        </div>
+        <hr >
+        <div class="list">
+            <div class="item">
+                <span>notifications</span>
+                <i class="fa fa-bell"></i>
+            </div>
+            <div class="item">
+                <span>items in cart</span>
+                <i class="fa fa-shopping-cart" style="font-size: 22px;"></i>
+            </div>
+            <div class="item">
+                <span>settings</span>
+                <i class="fa fa-gear" style="font-size: 22px;"></i>
+            </div>
+            <div onclick="logout()" class="item">
+                <span>logout</span>
+                <i class="fa fa-sign-out" style="font-size: 22px;"></i>
+            </div>
+        </div>
+    </div>
+    <div id="IT-m" class="HM">
+        <div id="IT-u" class="upper override">
+            <img src="../assets/img/hm-m.png" style="height: 50%;" width="15%">
+        </div>
+        <div id="IT-l" class="lowerHalf override2">
+            <div class="widget"  style="padding-top: 10px; padding-bottom: 0;" onclick="showIT()">
+                <img style="height: 65%; width: 50%;" src="../assets/img/polo-hm.png" />
+                <div class="desc_price " >
+                    men's hm polo
+                    p 340.00
+                </div>
+                <div class="title2">
+                    <div>S</div>
+                    <div>M</div>
+                    <div>L</div>
+                    <div>XL</div>
+                    <div>2XL</div>
+                    <div>3XL</div>
+                </div>
+            </div>
+            <div class="widget"  style="padding-top: 10px; padding-bottom: 0;" onclick="showIT()">
+                <img style="height: 65%; width: 30%;" src="../assets/img/hm-pants.png" />
+                <div class="desc_price " style="width: 28%;">
+                    men's hM pants
+                    p 450.00
+                </div>
+                <div class="title2">
+                    <div>S</div>
+                    <div>M</div>
+                    <div>L</div>
+                    <div>XL</div>
+                    <div>2XL</div>
+                    <div>3XL</div>
+                </div>
+            </div>
+            <div class="widget"  style="padding-top: 10px; padding-bottom: 0;" onclick="showIT()">
+                <img style="height: 65%; width: 45%;" src="../assets/img/polo-hm.png" />
+                <div class="desc_price shorten">
+                    men's hm blazer
+                    p 730 - P850.00
+                </div>
+                <div class="title2">
+                    <div>S</div>
+                    <div>M</div>
+                    <div>L</div>
+                    <div>XL</div>
+                    <div>2XL</div>
+                    <div>3XL</div>
+                </div>
+            </div>
+
+            <div class="widget"  style="padding-top: 10px; padding-bottom: 0;" onclick="showIT()">
+                <img style="height: 65%; width: 50%;" src="../assets/img/pics.png" />
+                <div class="desc_price" style="height: 65%; width: 38%;">
+                    men's hm chef's polo
+                    p 360.00
+                </div>
+                <div class="title2"> 
+                    <div>S</div>
+                    <div>M</div>
+                    <div>L</div>
+                    <div>XL</div>
+                    <div>2XL</div>
+                    <div>3XL</div>
+                </div>
+            </div>
+
+            <div class="widget"  style="padding-top: 10px; padding-bottom: 0;" onclick="showIT()">
+                <img style="height: 65%; width: 45%;" src="../assets/img/hm-vest.png" />
+                <div class="desc_price" >
+                    men's hm vest
+                    p 350.00
+                </div>
+                <div class="title2">
+                    <div>S</div>
+                    <div>M</div>
+                    <div>L</div>
+                    <div>XL</div>
+                    <div>2XL</div>
+                    <div>3XL</div>
+                </div>
+            </div>
+            <div class="btn-div">
+                <button class="it-btn" onclick="move3()">Check Women's Uniform</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

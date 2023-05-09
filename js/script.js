@@ -1,9 +1,25 @@
 function move(){
-    window.location.href="./screens/dash.html"
+    window.location.href="../screens/dash.html"
 }
-
+function move3(){
+    window.location.href="../screens/hm-w.html"
+}
+function move2hm(){
+    window.location.href="../screens/hm-m.html"
+}
+function moveTM(){
+    window.location.href="../screens/tm-m.html"
+}
 function logout(){
     window.location.href="/"
+}
+
+function showITW(){
+    window.location.href="../screens/IT-W.html"
+}
+
+function back(){
+    window.location.href="../screens/dash.html"
 }
 
 function openNav() {

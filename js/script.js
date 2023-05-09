@@ -3,7 +3,7 @@ function move(){
 }
 
 function logout(){
-    window.location.href="index.html"
+    window.location.href="/"
 }
 
 function openNav() {
